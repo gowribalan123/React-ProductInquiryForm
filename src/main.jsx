@@ -21,7 +21,7 @@ const router = createBrowserRouter([
        {path:'/',element:<Home/>},
        {path:'/about',element:<AboutUs/>},
       // {path:'/signin',element:<SignIn/>,action:contactAction},
-       {path:'/product',element:<Product/>}
+       {path:'/react-productinquiryform',element:<Product/>}
              ]
   },
 ]);

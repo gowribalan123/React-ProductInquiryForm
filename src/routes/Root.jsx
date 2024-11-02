@@ -13,7 +13,7 @@ const Root = () => {
         <li><Link to='/'>Home</Link></li>
        <li><Link to='/about'>About Us</Link></li>
   
-        <li><Link to='/product'>ProductInquiry Form</Link></li>
+        <li><Link to='/react-productinquiryform'>ProductInquiry Form</Link></li>
            
         </ul>
     </nav>
