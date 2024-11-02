@@ -1,7 +1,8 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-
+//import App from'./App.jsx'
+//import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import {createBrowserRouter,RouterProvider,} from "react-router-dom";
 import Root from './routes/Root.jsx'
 import ErrorPage from './Error-Page.jsx';
@@ -14,12 +15,11 @@ import Product from './components/Product.jsx';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/react-productinquiryform/",
     element: <Root/>,
     errorElement:<ErrorPage/>,
     children:
-    [
-       
+    [  
        {path:'/react-productinquiryform/home',element:<Home/>},
       
        {path:'/react-productinquiryform/about',element:<AboutUs/>},
@@ -32,9 +32,10 @@ const router = createBrowserRouter([
 ]);
 
 
-
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-   <RouterProvider router={router} />
+  <StrictMode >
+  <RouterProvider router={router} />
+  
+  
   </StrictMode>,
 )
