@@ -15,7 +15,7 @@ import Product from './components/Product.jsx';
 
 const router = createBrowserRouter([
   {
-    path: "/react-productinquiryform/",
+    path: '/react-productinquiryform/',
     element: <Root/>,
     errorElement:<ErrorPage/>,
     children:
