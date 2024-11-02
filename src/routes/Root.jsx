@@ -10,10 +10,10 @@ const Root = () => {
     <nav>
         <ul>
              
-        <li><Link to='/'>Home</Link></li>
-       <li><Link to='/about'>About Us</Link></li>
+        <li><Link to='/react-productinquiryform/home'>Home</Link></li>
+       <li><Link to='/react-productinquiryform/about'>About Us</Link></li>
   
-        <li><Link to='/react-productinquiryform'>ProductInquiry Form</Link></li>
+        <li><Link to='/react-productinquiryform/product'>ProductInquiry Form</Link></li>
            
         </ul>
     </nav>

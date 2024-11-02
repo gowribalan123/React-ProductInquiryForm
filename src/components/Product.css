@@ -4,15 +4,47 @@
     font-family: Arial, sans-serif;
     color: #333;
   }
-  
+  .success{
+    color:darkblue;
+  }
+  .cust
+  {
+    background-color: aliceblue;
+    color: brown;
+  }
   .hero {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 60px 20px;
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
+   
+    background: linear-gradient(to right, #7e8ccf, #583059);
     color: #fff;
     
   }
-  
+  .form-control{
+    width: 500px;
+  }
+textarea{
+  height: 150px;
+}
+.alert {
+  padding: 20px;
+  background-color: #3522c7; /* Green */
+  color: white;
+  margin-bottom: 15px;
+}
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.closebtn:hover {
+  color: black;
+}

@@ -4,13 +4,18 @@
     font-family: Arial, sans-serif;
     color: #333;
   }
+  .enq{
+    color:blueviolet;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+  }
   
   .hero {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: justify;
     text-align: center;
-    padding: 60px 20px;
+    
     background: linear-gradient(to right, #ff7e5f, #feb47b);
     color: #fff;
   }

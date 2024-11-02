@@ -5,9 +5,9 @@ import './home.css'
 const Home = () => {
  
   return (
-    <div className='hero'>
-    <h1>Welcome to Home page !</h1>
-    
+    <div class="head">
+    <h1>Welcome to Inquiry Mart !</h1>
+  
     
   
     </div>

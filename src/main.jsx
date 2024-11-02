@@ -17,12 +17,17 @@ const router = createBrowserRouter([
     path: "/",
     element: <Root/>,
     errorElement:<ErrorPage/>,
-    children:[
-       {path:'/',element:<Home/>},
-       {path:'/about',element:<AboutUs/>},
-      // {path:'/signin',element:<SignIn/>,action:contactAction},
-       {path:'/react-productinquiryform',element:<Product/>}
-             ]
+    children:
+    [
+       
+       {path:'/react-productinquiryform/home',element:<Home/>},
+      
+       {path:'/react-productinquiryform/about',element:<AboutUs/>},
+
+       {path:'/react-productinquiryform/product',element:<Product/>},
+
+        // {path:'/signin',element:<SignIn/>,action:contactAction}
+      ]
   },
 ]);
 

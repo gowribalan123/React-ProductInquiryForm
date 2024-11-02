@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import { Form  } from 'react-router-dom'
+ import  './Product.css'
  
 
 
@@ -30,32 +31,53 @@ const [customerDetails, setCustomerDetails] = useState({
         setSubmitted(true);  
     };  
 
+    
+
+    
+  
+
     return (  
-        <div className='hero'>   <h1>Welcome to Product Inquiry page !</h1>
+        <div className='hero' > 
             {submitted ? (  
-                <div>  
-                    <h2>Thank You for your Inquiry!</h2>  
-                    <p>Customer Name: {customerDetails.name}</p>  
+        <div class="mb-3"> 
+              
+
+                 <div class='success'>
+                 <h2>Your form is submitted successfully.</h2>  
+                 </div>
+                
+                <p>Your  details are :- </p>
+                <div class="cust">
+
+                <p>Name: {customerDetails.name}</p>  
                     <p>Email ID: {customerDetails.email}</p>  
-                    <p>Message: {customerDetails.message}</p>  
+                    <p>Product Inquiry: {customerDetails.message}</p>  
+                </div>
+               
+                    <div class="alert">
+  
+    Thank you for your inquiry about our product. We will get back to you shortly.
+</div>
+                 
                 </div>  
             ) : (  
-                <Form onSubmit={handleSubmit}>  
-                    <div  >  
+                <Form onSubmit={handleSubmit} >  
+                    <div  class="mb-3">  
                         <label>Name:</label>  
-                        <input type="text" name="name" value={customerDetails.name} onChange={handleChange} class="form-control"/>  
+                        <input type="text" name="name" value={customerDetails.name} onChange={handleChange} class="form-control" placeholder='Enter your name'/>  
                     </div>  
-                    <div>  
+                    <div class="mb-3">  
                         <label>Email:</label>  
-                        <input type="email" name="email" value={customerDetails.email} onChange={handleChange}  class="form-control"/>  
+                        <input type="email" name="email" value={customerDetails.email} onChange={handleChange}  class="form-control" placeholder='example@gmail.com'/>  
                     </div> 
-                    <div>  
-                        <label>Message:</label>  
-                        <textarea name="message" value={customerDetails.message} onChange={handleChange} class="form-control"></textarea>  
+                    <div class="mb-3">  
+                        <label>Product Inquiry:</label>  
+                        <textarea name="message" value={customerDetails.message} onChange={handleChange}  class="form-control" placeholder='What would you like to know?'></textarea>  
                     </div>  
                     {error && <p style={{ color: 'red' }}>{error}</p>}  
                     <br />
-                    <button type="submit"  class="btn btn-primary">Submit</button>  
+                    <button type="submit"  class="btn btn-primary">Send Inquiry</button>  
+
                 </Form>  
             )}  
         </div>  
