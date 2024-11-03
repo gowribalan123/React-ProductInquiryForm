@@ -76,7 +76,7 @@ const [customerDetails, setCustomerDetails] = useState({
                     </div>  
                     {error && <p style={{ color: 'red' }}>{error}</p>}  
                     <br />
-                    <button type="submit"  class="btn btn-primary">Send Inquiry</button>  
+                    <button type="submit"  class="btn btn-light">Send Inquiry</button>  
 
                 </Form>  
             )}  

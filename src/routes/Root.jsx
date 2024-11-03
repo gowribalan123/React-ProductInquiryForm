@@ -1,12 +1,17 @@
 import React from 'react'
 import {Outlet , Link} from 'react-router-dom'
-
+ 
 
 const Root = () => {
   return (
-    <div>
-
+     <div>
+          <div class="head">
+                 <h1>Inquiry Mart</h1>
+    
+          </div>
 <header>
+
+
     <nav>
         <ul>
              
